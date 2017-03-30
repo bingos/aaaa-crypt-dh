@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use vars qw($VERSION);
 
-$VERSION = '0.04';
+$VERSION = '0.06';
 
 qq[Making Crypt::DH installable];
 
@@ -19,18 +19,18 @@ AAAA::Crypt::DH - making Crypt::DH installable
   # in Makefile.PL
 
   requires 'AAAA::Crypt::DH';
- 
+
 =head1 DESCRIPTION
 
-AAAA::Crypt::DH is a L<Task> distribution that makes sure that either 
+AAAA::Crypt::DH is a L<Task> distribution that makes sure that either
 L<Math::BigInt::GMP> or L<Math::BigInt::Pari> are installed so that
 L<Crypt::DH> works at a speed approaching reasonable.
 
-If you have a dependency on L<Crypt::DH> add AAAA::Crypt::DH as an 
+If you have a dependency on L<Crypt::DH> add AAAA::Crypt::DH as an
 additional dependency and one of the above Math libs will be installed
 before L<Crypt::DH>.
 
-Why the C<'AAAA'>? Well, L<CPAN> and L<CPANPLUS> install prereqs sorted 
+Why the C<'AAAA'>? Well, L<CPAN> and L<CPANPLUS> install prereqs sorted
 alphabetically, the C<'AAAA'> ensures that this prereq is installed before
 L<Crypt::DH>. Simples.
 
